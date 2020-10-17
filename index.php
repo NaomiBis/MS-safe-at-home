@@ -41,9 +41,12 @@ $response = "END Emergency alert has been canceled";
 }
 // Menu for a user who selects "2" from the second menu above
 // Will be brought to this fourth menu screen
-else if ($text == "2") {
-$response = "CON Safe houses are organisations that can help you with a accomodation and other services \n";
-$response .= "Please Enter 1 to confirm your need for a safe house 0 to cancel\n";
+else if ($text == "1*2") {
+$response  = "CON  Kies 'n opsie hieronder\n";
+$response .= "1. Noodwaarskuwing \n";
+$response .= "2. Huis van veiligheid \n";
+$response .= "3. Verlaat u mishandelaar \n";
+$response .= "4. Dokumentberging\n";
 }
 // Menu for a user who selects "1" from the fourth menu screen
 else if ($text == "1*2*1") {
