@@ -5,13 +5,15 @@ $serviceCode = $_POST["serviceCode"];
 $text = $_POST["text"];
 //This is the first menu screen
 if ( $text == "" ) {
-$response  = "CON  Welcome to Imbokodo get assistance or learn more";
-$response .= "1. Enter 1 to continue";
+$response  = "CON  Welcome to Imbokodo get assistance or learn more \n";
+  
+$response .= "Enter 1 to continue";
 }
 // Menu for a user who selects '1' from the first menu
 // Will be brought to this second menu screen
 else if ($text == "1") {
 $response  = "CON  Please select a language \n";
+  
 $response .= "1. English \n";
 $response .= "2. Afrikaans \n";
 $response .= "3. Sotho \n";
@@ -30,14 +32,17 @@ $response .= "4. Document Storage\n";
 // Will be brought to this third menu screen
 else if ($text == "1*1*1") {
 $response .= "This is only for immediate emergency \n";
-$responce .= "Press 1 to continue and 0 to cancel \n";
-;
+$response .= "Enter 1 to continue \n";
+$response .= "Enter 0 to cancel";
 }
 else if ($text == "1*1*1*1") {
-$response = "Help is on the way, stay strong";
+$response = "Your alert has been recieved";
+$response .= "Enter your address below";
+$response .= "Our emergency rescue team is on the way";
 }
-else if ($text == "1*1*0") {
-$response = "END Emergency alert has been canceled";
+else if ($text == "1*1*1*0") {
+$response = "Your request has been canceled";
+$response .= "Thanks for using our service, \n Brought to you by Imbokodo";
 }
 // Menu for a user who selects "2" from the second menu above
 // Will be brought to this fourth menu screen
@@ -50,11 +55,18 @@ $response .= "4. Dokumentberging\n";
 }
 // Menu for a user who selects "1" from the fourth menu screen
 else if ($text == "1*2*1") {
-$response = "CON A safe house near you will contact you soon \n";
-$response .= "Please enter your phone number /n";
+$response .= "Dit is slegs vir onmiddellike noodgevalle \n";
+$response .= "Voer 1 in om voort te gaan \n";
+$response .= "Voer 0 in om te kanselleer";
+}
+else if ($text == "1*2*1*1") {
+$response = "U waarskuwing is ontvang";
+$response .= "Voer u adres hieronder in";
+$response .= "Ons noodreddingspan is op pad";
 }
 else if ($text == "1*2*1*0") {
-$response = "END You have canceled the request /n";
+$response = "U versoek is gekanselleer";
+$response .= "Dankie vir die gebruik van ons diens, \ngebring deur Imbokodo";
 }
 // Menu for a user who selects "3" from the second menu above
 // Will be brought to this fith menu screen
