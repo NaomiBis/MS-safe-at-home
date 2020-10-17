@@ -59,9 +59,12 @@ $response = "END You have canceled the request /n";
 // Menu for a user who selects "3" from the second menu above
 // Will be brought to this fith menu screen
 else if ($text == "1*3") {
-$response = "CON Do you want steps on how to leave your abuser? \n";
-$response .= "Please Enter 1 to confirm 0 to cancel\n";
-}
+$response  = "CON  Ka kopo khetha khetho e ka tlase\n";
+$response .= "1. Tlhokomeliso ea maemo a tšohanyetso \n";
+$response .= "2. Ntlo e Sireletsehileng \n";
+$response .= "3. Ho siea motho ea u hlekefetsang \n";
+$response .= "4. Tokomane ea polokelo\n";
+  }
 // Menu for a user who enters "1" from the fifth menu
 else if ($text == "1*3*1") {
 $response = "CON An organisation will contact you to come up with a safety plan that is best for you";
@@ -77,8 +80,11 @@ $response = "END Your request has been canceled";
 // Menu for a user who enters "4" from the second menu above
 // Will be brought to this sixth menu screen
 else if ($text == "1*4") {
-$response = "CON This is for keepimg your important documents kept safely at an organisation\n";
-$response .= "Please Enter 1 to continue \n";
+$response  = "CON Sicela ukhethe inketho engezansi\n";
+$response .= "1. Isaziso Esiphuthumayo \n";
+$response .= "2. Indlu Ephephile \n";
+$response .= "3. Ukushiya umhlukumezi wakho \n";
+$response .= "4. Isitoreji Sombhalo\n";
 }
 // Menu for a user who enters "1" from the sixth menu
 else if ($text == "1*4*1") {
