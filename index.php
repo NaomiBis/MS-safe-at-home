@@ -32,8 +32,7 @@ $response .= "4. Document Storage\n";
 // Will be brought to this third menu screen
 else if ($text == "1*1*1") {
 $response .= "This is only for immediate emergency \n";
-$response .= "Enter 1 to continue \n";
-$response .= "Enter 0 to cancel";
+$response .= "Enter 1 to continue or 0 to cancel \n";
 }
 else if ($text == "1*1*1*1") {
 $response = "Your alert has been recieved";
@@ -56,8 +55,8 @@ $response .= "4. Dokumentberging\n";
 // Menu for a user who selects "1" from the fourth menu screen
 else if ($text == "1*2*1") {
 $response .= "Dit is slegs vir onmiddellike noodgevalle \n";
-$response .= "Voer 1 in om voort te gaan \n";
-$response .= "Voer 0 in om te kanselleer";
+$response .= "Voer 1 in om voort te gaan 0 in om te kanselleer \n";
+
 }
 else if ($text == "1*2*1*1") {
 $response = "U waarskuwing is ontvang";
