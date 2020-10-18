@@ -5,7 +5,7 @@ $serviceCode = $_POST["serviceCode"];
 $text = $_POST["text"];
 //This is the first menu screen
 if ( $text == "" ) {
-$response  = "CON  Welcome to Imbokodo get assistance or learn more \r\n";
+$response  = "CON Welcome to Imbokodo get assistance or learn more \r\n";
   
 $response .= "Enter 1 to continue";
 }
@@ -31,7 +31,7 @@ $response .= "4. Document Storage\n";
 //Menu for a user who selects '1' from the third menu above
 // Will be brought to this third menu screen
 else if ($text == "1*1*1") {
-$response  = "CON This is only for immediate emergency '\n'";
+$response  = "CON This is only for immediate emergency \n";
 $response .= "Enter 1 to continue or 0 to cancel \r\n";
 }
 else if ($text == "1*1*1*1") {
@@ -40,7 +40,7 @@ $response .= "Enter your address below \r\n";
 $response .= "Our emergency rescue team is on the way \r\n";
 }
 else if ($text == "1*1*1*0") {
-$response = "Your request has been canceled";
+$response = "CON Your request has been canceled";
 $response .= "Thanks for using our service, \n Brought to you by Imbokodo";
 }
 // Menu for a user who selects "2" from the second menu above
