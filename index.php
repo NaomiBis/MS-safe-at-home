@@ -194,7 +194,7 @@ $response .= "Enter your contact details below to continue \r\n";
 $response .= "Enter 0 to cancel \r\n";
 }
 
-else if ($text == "1*1*3*0") {
+else if ($text == "1*1*3*1*0") {
 $response = "CON Your request has been canceled\r\n";
 $response .= "Thanks for using our service, \r\n Brought to you by Imbokodo\r\n";
 }
@@ -214,7 +214,7 @@ $response .= "Voer u kontakbesonderhede hieronder in om voort te gaan \r\n";
 $response .= "Voer 0 in om te kanselleer \r\n";
 }
 
-else if ($text == "1*2*3*0") {
+else if ($text == "1*2*3*1*0") {
 $response = "CON U versoek is gekanselleer\r\n";
 $response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo\r\n";
 }
@@ -234,7 +234,7 @@ $response .= "Kenya lintlha tsa hau tsa puisano \r\n ka tlase ho tsoela pele \r\
 $response .= "Kenya 0 ho hlakola \r\n";
 }
 
-else if ($text == "1*3*3*0") {
+else if ($text == "1*3*3*1*0") {
 $response = "CON Kopo ea hau e hlakotsoe";
 $response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n E u tliselitse eona ka Imbokodo\r\n";
 }
@@ -254,7 +254,7 @@ $response .= "Faka imininingwane yakho yokuxhumana ngezansi ukuze uqhubeke \r\n"
 $response .= "Faka u-0 ukuze ukhansele \r\n";
 }
 
-else if ($text == "1*4*3*0") {
+else if ($text == "1*4*3*1*0") {
 $response = "CON Isicelo sakho sikhanseliwe\r\n";
 $response .= "Siyabonga ngokusebenzisa insiza yethu, n\ Esilethelwe yona yi-Imbokodo\r\n";
 }
