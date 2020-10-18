@@ -22,7 +22,7 @@ $response .= "4. Zulu \n";
 // Menu for a user who selects '1' from the second menu
 // Will be brought to this third menu screen
 else if ($text == "1*1") {
-$response  = "CON  Please select an option below\n";
+$response  = "CON Please select an option below\n";
 $response .= "1. Emergency Alert \n";
 $response .= "2. Safe House \n";
 $response .= "3. Leaving your abuser \n";
@@ -31,7 +31,7 @@ $response .= "4. Document Storage\n";
 //Menu for a user who selects '1' from the third menu above
 // Will be brought to this third menu screen
 else if ($text == "1*1*1") {
-$response  = "This is only for immediate emergency \r\n";
+$response  = "CON This is only for immediate emergency \r\n";
 $response .= "Enter 1 to continue or 0 to cancel \r\n";
 }
 else if ($text == "1*1*1*1") {
