@@ -126,7 +126,7 @@ $response .= "Our emergency rescue team is on the way \r\n";
 }
 
 else if ($text == "1*1*2*0") {
-$response = "Your request has been canceled \r\n";
+$response = "CON Your request has been canceled \r\n";
 $response .= "Thanks for using our service, \r\n Brought to you by Imbokodo \r\n";
 }
 
@@ -143,8 +143,42 @@ $response .= "Ons noodreddingspan is op pad \r\n";
 }
 
 else if ($text == "1*2*2*0") {
-$response = " CON U versoek is gekanselleer \r\n";
+$response = "CON U versoek is gekanselleer \r\n";
 $response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo \r\n";
+}
+
+else if ($text == "1*3*2") {
+$response = "CON Matlo a bolokehileng ke mekhatlo e ka u thusang \n ka bolulo le lits'ebeletso tse ling\r\n";
+$response .= "Ka kopo kenya 1 ho netefatsa tlhoko ea hau ea ntlo e bolokehileng\r\n";
+$response .= "Ka kopo kenya 0 ho hlakola \r\n";
+}
+
+else if ($text == "1*3*2*1") {
+$response = "CON Kopo ea hau ea ntlo e bolokehileng e amohetsoe \r\n";
+$response .= "Kenya aterese ea hau ka tlase, haeba o hloka sepalangoang \r\n";
+$response .= "Sehlopha sa rona sa pholoso sa maemo a tšohanyetso se tseleng \r\n";
+}
+
+else if ($text == "1*3*2*0") {
+$response = "CON Kopo ea hau e hlakotsoe \r\n";
+$response .= "Re leboha ho sebelisa ts'ebeletso ea rona,\r\nE u tliselitse eona ka Imbokodo \r\n";
+}
+
+else if ($text == "1*4*2") {
+$response  = "CON Izindlu eziphephile izinhlangano ezingakusiza \r\n ngendawo yokuhlala kanye nezinye izinsiza \r\n";
+$response .= "Sicela ufake u-1 ukuqinisekisa isidingo sakho sendlu ephephile\r\n";
+$response .= "Sicela ufake u-0 ukuze ukhansele\r\n";
+}
+
+else if ($text == "1*4*2*1") {
+$response  = "CON Isicelo sakho sendlu ephephile sitholiwe\r\n";
+$response .= "Faka ikheli lakho ngezansi, uma udinga ezokuthutha\r\n";
+$response .= "Ithimba lethu labezimo eziphuthumayo lisendleleni\r\n";
+}
+
+else if ($text == "1*4*2*0") {
+$response  = "CON Isicelo sakho sikhanseliwe\r\n";
+$response .= "Siyabonga ngokusebenzisa insiza yethu, n\ Esilethelwe yona yi-Imbokodo\r\n";
 }
 
 //echo response
