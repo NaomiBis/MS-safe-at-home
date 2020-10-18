@@ -35,9 +35,9 @@ $response  = "CON This is only for immediate emergency \r\n";
 $response .= "Enter 1 to continue or 0 to cancel \r\n";
 }
 else if ($text == "1*1*1*1") {
-$response = "Your alert has been recieved";
+$response = "CON Your alert has been recieved";
 $response .= "Enter your address below";
-$response  = "Our emergency rescue team is on the way";
+$response .= "Our emergency rescue team is on the way";
 }
 else if ($text == "1*1*1*0") {
 $response = "Your request has been canceled";
