@@ -181,6 +181,85 @@ $response  = "CON Isicelo sakho sikhanseliwe\r\n";
 $response .= "Siyabonga ngokusebenzisa insiza yethu, n\ Esilethelwe yona yi-Imbokodo\r\n";
 }
 
+else if ($text == "1*1*3") {
+$response = "CON Do you need advice on how to leave your abuser? \r\n";
+$response .= "Enter 1 to continue \r\n";
+$response .= "Enter 0 to cancel \r\n";
+}
+
+    // Menu for a user who enters "1" from the fifth menu
+else if ($text == "1*1*3*1") {
+$response = "CON An organisation will contact you shortly with a safety plan";
+$response .= "Enter your contact details below to continue \r\n";
+$response .= "Enter 0 to cancel \r\n";
+}
+
+else if ($text == "1*1*3*0") {
+$response = "CON Your request has been canceled\r\n";
+$response .= "Thanks for using our service, \r\n Brought to you by Imbokodo\r\n";
+}
+
+  // Menu for a user who selects "2" from the second menu above
+  // Will be brought to this fourth menu screen
+else if ($text == "1*2*3") {
+$response = "CON Het u advies nodig oor hoe u u mishandelaar moet verlaat? \r\n";
+$response .= "Voer 1 in om voort te gaan \r\n";
+$response .= "Voer 0 in om te kanselleer\r\n";
+}
+
+    // Menu for a user who enters "1" from the fifth menu
+else if ($text == "1*2*3*1") {
+$response = "CON 'N Organisasie sal binnekort met \r\n u in verbinding tree met 'n veiligheidsplan\r\n";
+$response .= "Voer u kontakbesonderhede hieronder in om voort te gaan \r\n";
+$response .= "Voer 0 in om te kanselleer \r\n";
+}
+
+else if ($text == "1*2*3*0") {
+$response = "CON U versoek is gekanselleer\r\n";
+$response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo\r\n";
+}
+
+    // Menu for a user who selects "2" from the second menu above
+   // Will be brought to this fourth menu screen
+else if ($text == "1*3*3") {
+$response = "CON Na o hloka likeletso mabapi le hore \r\n na o ka tlohela joang motho ea u hlekefetsang? \r\n";
+$response .= "Kenya 1 ho tsoela pele \r\n";
+$response .= "Kenya 0 ho hlakola\r\n";
+}
+
+    // Menu for a user who enters "1" from the fifth menu
+else if ($text == "1*3*3*1") {
+$response = "CON Mokhatlo o tla ikopanya le uena \r\n haufinyane ka moralo oa polokeho\r\n";
+$response .= "Kenya lintlha tsa hau tsa puisano \r\n ka tlase ho tsoela pele \r\n";
+$response .= "Kenya 0 ho hlakola \r\n";
+}
+
+else if ($text == "1*3*3*0") {
+$response = "CON Kopo ea hau e hlakotsoe";
+$response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n E u tliselitse eona ka Imbokodo\r\n";
+}
+
+    // Menu for a user who selects "2" from the second menu above
+   // Will be brought to this fourth menu screen
+else if ($text == "1*4*3") {
+$response = "CON Ngabe udinga izeluleko zokuthi ungamshiya \r\n kanjani umhlukumezi wakho? \r\n";
+$response .= "Faka u-1 ukuze uqhubeke \r\n";
+$response .= "Faka u-0 ukuze ukhansele\r\n";
+}
+
+   // Menu for a user who enters "1" from the fifth menu
+else if ($text == "1*4*3*1") {
+$response = "CON Inhlangano izokuthinta maduzane ngohlelo lokuphepha\r\n";
+$response .= "Faka imininingwane yakho yokuxhumana ngezansi ukuze uqhubeke \r\n";
+$response .= "Faka u-0 ukuze ukhansele \r\n";
+}
+
+else if ($text == "1*4*3*0") {
+$response = "CON Isicelo sakho sikhanseliwe\r\n";
+$response .= "Siyabonga ngokusebenzisa insiza yethu, n\ Esilethelwe yona yi-Imbokodo\r\n";
+}
+
+
 //echo response
 header('Content-type: text/plain');
 echo $response
