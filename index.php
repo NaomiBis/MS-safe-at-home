@@ -113,7 +113,39 @@ else if ($text == "1*4*1*0") {
 $response = "CON Isicelo sakho sikhanseliwe \r\n";
 $response .= "Siyabonga ngokusebenzisa insiza yethu \r\n Esilethelwe yona yi-Imbokodo \r\n";
 }
+else if ($text == "1*1*2") {
+$response = "CON Safe houses are organisations that can help you \r\n with a accomodation and other services \r\n";
+$response .= "Please Enter 1 to confirm your need for a safe house \r\n";
+$response .= "Please Enter 0 to cancel \r\n";
+}
 
+else if ($text == "1*1*2*1") {
+$response = "CON Your safe house request has been recieved \r\n";
+$response .= "Enter your address below, if you need transport \r\n";
+$response .= "Our emergency rescue team is on the way \r\n";
+}
+
+else if ($text == "1*1*2*0") {
+$response = "Your request has been canceled \r\n";
+$response .= "Thanks for using our service, \r\n Brought to you by Imbokodo \r\n";
+}
+
+else if ($text == "1*2*2") {
+$response = "CON Veilige huise is organisasies wat u kan help \r\n met akkommodasie en ander dienste \r\n";
+$response .= "Voer 1 in om u behoefte aan 'n veilige huis te bevestig \r\n";
+$response .= "Voer asseblief 0 in om te kanselleer \r\n";
+}
+
+else if ($text == "1*2*2*1") {
+$response = "CON U veilige huisversoek is ontvang \r\n";
+$response .= "Voer u adres hieronder in as u vervoer benodig \r\n";
+$response .= "Ons noodreddingspan is op pad \r\n";
+}
+
+else if ($text == "1*2*2*0") {
+$response = " CON U versoek is gekanselleer \r\n";
+$response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo \r\n";
+}
 
 //echo response
 header('Content-type: text/plain');
