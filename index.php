@@ -54,8 +54,8 @@ $response .= "4. Dokumentberging\n";
 }
 // Menu for a user who selects "1" from the fourth menu screen
 else if ($text == "1*2*1") {
-$response  = "CON Dit is slegs vir onmiddellike noodgevalle \n";
-$response .= "Voer 1 in om voort te gaan 0 in om te kanselleer \n";
+$response  = "CON Dit is slegs vir onmiddellike noodgevalle \r\n";
+$response .= "Voer 1 in om voort te gaan 0 in om te kanselleer \r\n";
 
 }
 else if ($text == "1*2*1*1") {
@@ -79,7 +79,7 @@ $response .= "4. Tokomane ea polokelo\n";
 else if ($text == "1*3*1") {
 $response  = "CON Sena ke sa maemo a tšohanyetso \r\n";
 $response .= "Kenya 1 ho tsoela pele \n";
-$response .= "Kenya 0 ho hlakola";
+$response .= "Kenya 0 ho hlakola \r\n";
 }
 else if ($text == "1*3*1*1") {
 $response  = "CON Tlhokomeliso ea hau e amohetsoe \r\n";
@@ -93,33 +93,28 @@ $response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n u tliselitse eona 
 // Menu for a user who enters "4" from the second menu above
 // Will be brought to this sixth menu screen
 else if ($text == "1*4") {
-$response  = "CON Sicela ukhethe inketho engezansi\n";
-$response .= "1. Isaziso Esiphuthumayo \n";
-$response .= "2. Indlu Ephephile \n";
-$response .= "3. Ukushiya umhlukumezi wakho \n";
-$response .= "4. Isitoreji Sombhalo\n";
+$response  = "CON Sicela ukhethe inketho engezansi \r\n";
+$response .= "1. Isaziso Esiphuthumayo \r\n";
+$response .= "2. Indlu Ephephile \r\n";
+$response .= "3. Ukushiya umhlukumezi wakho \r\n";
+$response .= "4. Isitoreji Sombhalo \r\n";
 }
-// Menu for a user who enters "1" from the sixth menu
 else if ($text == "1*4*1") {
-$response = "Please take the following original doccuments";
-$response .= "ID/Birth certificate";
-$response .= "Educational certificates";
-$response .= "Legal doccuments ";
-$response .= " Medical doccuments";
-$response .= " Take these doccuments to an organisation near you \n";
+$response  = "CON Lokhu kwenzelwa isimo esiphuthumayo \n esisheshayo kuphela \r\n";
+$response .= "Faka u-1 ukuze uqhubeke \r\n";
+$response .= "Faka u-0 ukuze ukhansele \r\n";
+}
+else if ($text == "1*4*1*1") {
+$response  = "CON Isaziso sakho sitholiwe \r\n";
+$response .= "Faka ikheli lakho ngezansi \r\n";
+$response .= "Ithimba lethu labezimo eziphuthumayo lisendleleni \r\n";
+}
+else if ($text == "1*4*1*0") {
+$response = "CON Isicelo sakho sikhanseliwe \r\n";
+$response .= "Siyabonga ngokusebenzisa insiza yethu \r\n Esilethelwe yona yi-Imbokodo \r\n";
 }
 
 
-// Menu for a user who enters "4" from the second menu above
-// Will be brought to this sixth menu screen
-else if ($text == "1*1*4") {
-$response = "Please take the following original doccuments";
-$response .= "ID/Birth certificate";
-$response .= "Educational certificates";
-$response .= "Legal doccuments ";
-$response .= " Medical doccuments";
-$response .= " Take these doccuments to an organisation near you \n";
-}
 //echo response
 header('Content-type: text/plain');
 echo $response
