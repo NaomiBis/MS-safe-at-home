@@ -71,7 +71,7 @@ $response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo \
 // Will be brought to this fith menu screen
 else if ($text == "1*3") {
 $response  = "CON  Ka kopo khetha khetho e ka tlase \r\n";
-$response .= "1. Tlhokomeliso ea maemo a tšohanyetso \r\n";
+$response .= "1. Tlhokomeliso ea maemo \r\n a tšohanyetso \r\n";
 $response .= "2. Ntlo e Sireletsehileng \r\n";
 $response .= "3. Ho siea motho ea u hlekefetsang \r\n";
 $response .= "4. Tokomane ea polokelo\r\n";
@@ -259,6 +259,127 @@ $response = "CON Isicelo sakho sikhanseliwe\r\n";
 $response .= "Siyabonga ngokusebenzisa insiza yethu, \r\n Esilethelwe yona yi-Imbokodo\r\n";
 }
 
+else if ($text == "1*1*4") {
+$response = "CON This is for keeping your important documents safe at an organisation\r\n";
+$response .= "Please Enter 1 to continue \r\n";
+$response .= "Please Enter 0 to cancel \r\n";
+}
+
+  // Menu for a user who enters "1" from the sixth menu
+else if ($text == "1*1*4*1") {
+$response  = "CON Please take the following original documents\r\n";
+$response .= "ID/Birth certificate & Educational certificate\r\n";
+$response .= "Legal documents & Medical documents\r\n";
+$response .= "To the nearest organisation or police station\r\n";
+$response .= "Thanks for using our service, \nBrought to you by Imbokodo \r\n";
+$response .= "To return to the main men, Enter 9 below \r\n";
+}
+
+else if ($text == "1*1*4*0") {
+$response = "CON Your request has been canceled\r\n";
+$response .= "Thanks for using our service, \r\nBrought to you by Imbokodo. \r\n";
+}
+
+else if ($text == "1*1*4*1*9") {
+$response  = "CON  Please select a language \n";
+$response .= "1. English \n";
+$response .= "2. Afrikaans \n";
+$response .= "3. Sotho \n";
+$response .= "4. Zulu \n";
+}
+
+    // Menu for a user who enters "4" from the second menu above
+   // Will be brought to this sixth menu screen
+else if ($text == "1*2*4") {
+$response = "CON Dit is om u belangrike dokumente by 'n organisasie veilig te hou. \r\n";
+$response .= "Voer 1 in om voort te gaan \r\n";
+$response .= "Voer asseblief 0 in om te kanselleer \r\n";
+}
+
+    // Menu for a user who enters "1" from the sixth menu
+else if ($text == "1*2*4*1") {
+$response =  "CON Neem asseblief die volgende oorspronklike dokumente\r\n";
+$response .= "ID/Geboortesertifikaat & Opvoedkundige sertifikaat\r\n";
+$response .= "Regsdokumente en mediese dokumente\r\n";
+$response .= "Na die naaste organisasie of polisiekantoor\r\n";
+$response .= "Dankie vir die gebruik van ons diens, \n gebring deur Imbokodo\r\n";
+$response .= "Voer 9 hieronder in om terug te keer na die hoofmanne \r\n";
+}
+
+else if ($text == "1*2*4*0") {
+$response = "CON U versoek is gekanselleer\r\n";
+$response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo\r\n";
+}
+
+else if ($text == "1*2*4*1*9") {
+$response  = "CON  Please select a language \n";
+$response .= "1. English \n";
+$response .= "2. Afrikaans \n";
+$response .= "3. Sotho \n";
+$response .= "4. Zulu \n";
+}
+
+    // Menu for a user who enters "4" from the second menu above
+   // Will be brought to this sixth menu screen
+else if ($text == "1*3*4") {
+$response = "CON Sena ke bakeng sa ho boloka litokomane \r\ntsa hau tsa bohlokoa li bolokehile \r\n mokhatlong o hlophisitsoeng\r\n";
+$response .= "Ka kopo kenya 1 ho tsoela pele \r\n";
+$response .= "Ka kopo kenya 0 ho hlakola \r\n";
+}
+
+   // Menu for a user who enters "1" from the sixth menu
+else if ($text == "1*3*4*1") {
+$response =  "CON Ka kopo nka litokomane tsa mantlha tse latelang\r\n";
+$response .= "Setifikeiti sa ID/Tsoalo le setifikeiti sa thuto\r\n";
+$response .= "Litokomane tsa molao le litokomane tsa bongaka\r\n";
+$response .= "Ho ea mokhatlong o haufi kapa seteisheneng sa mapolesa\r\n";
+$response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \nE u tliselitse eona ka Imbokodo\r\n";
+$response .= "Ho khutlela ho menu ya ka sehloohong, Kenya 9 ka tlase\r\n";
+}
+
+else if ($text == "1*3*4*0") {
+$response = "CON Kopo ea hau e hlakotsoe\r\n";
+$response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n E u tliselitse eona ka Imbokodo\r\n";
+}
+
+else if ($text == "1*3*4*1*9") {
+$response  = "CON  Please select a language \n";
+$response .= "1. English \n";
+$response .= "2. Afrikaans \n";
+$response .= "3. Sotho \n";
+$response .= "4. Zulu \n";
+}
+
+    // Menu for a user who enters "4" from the second menu above
+ // Will be brought to this sixth menu screen
+else if ($text == "1*4*4") {
+$response = "CON Lokhu kwenzelwa ukugcina imibhalo yakho \r\n ebalulekile iphephile enhlanganweni\r\n";
+$response .= "Faka u-1 ukuze uqhubeke \r\n";
+$response .= "Faka u-0 ukuze ukhansele\r\n";
+}
+
+    // Menu for a user who enters "1" from the sixth menu
+else if ($text == "1*4*4*1") {
+$response =  "CON Sicela uthathe imibhalo yokuqala elandelayo\r\n";
+$response .= "Isitifiketi se-ID/sokuzalwa nesitifiketi semfundo\r\n";
+$response .= "Imibhalo yezomthetho nemibhalo yezokwelapha\r\n";
+$response .= "Enhlanganweni esiseduzane noma esiteshini samaphoyisa\r\n";
+$response .= "Siyabonga ngokusebenzisa insiza yethu,\r\n Ulethelwe yona yi-Imbokodo \n";
+$response .= "Ukubuyela kumenu ephambili, Faka u-9 ngezansi\r\n";
+}
+
+else if ($text == "1*4*4*0") {
+$response = "CON Isicelo sakho sikhanseliwe\r\n";
+$response .= "Siyabonga ngokusebenzisa insiza yethu, n\ Esilethelwe yona yi-Imbokodo\r\n";
+}
+
+else if ($text == "1*1*4*4*9") {
+$response  = "CON  Please select a language \n";
+$response .= "1. English \n";
+$response .= "2. Afrikaans \n";
+$response .= "3. Sotho \n";
+$response .= "4. Zulu \n";
+}
 
 //echo response
 header('Content-type: text/plain');
