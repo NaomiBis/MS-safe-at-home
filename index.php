@@ -31,13 +31,13 @@ $response .= "4. Document Storage\n";
 //Menu for a user who selects '1' from the third menu above
 // Will be brought to this third menu screen
 else if ($text == "1*1*1") {
-$response  = "CON This is only for immediate emergency \r\n";
+$response  = "CON This is only for immediate emergency '\n'";
 $response .= "Enter 1 to continue or 0 to cancel \r\n";
 }
 else if ($text == "1*1*1*1") {
-$response = "CON Your alert has been recieved";
-$response .= "Enter your address below";
-$response .= "Our emergency rescue team is on the way";
+$response = "CON Your alert has been recieved \r\n";
+$response .= "Enter your address below \r\n";
+$response .= "Our emergency rescue team is on the way \r\n";
 }
 else if ($text == "1*1*1*0") {
 $response = "Your request has been canceled";
