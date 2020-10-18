@@ -71,10 +71,10 @@ $response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo \
 // Will be brought to this fith menu screen
 else if ($text == "1*3") {
 $response  = "CON  Ka kopo khetha khetho e ka tlase \r\n";
-$response .= "1. Tlhokomeliso ea maemo a tšohanyetso \n";
-$response .= "2. Ntlo e Sireletsehileng \n";
-$response .= "3. Ho siea motho ea u hlekefetsang \n";
-$response .= "4. Tokomane ea polokelo\n";
+$response .= "1. Tlhokomeliso ea maemo a tšohanyetso \r\n";
+$response .= "2. Ntlo e Sireletsehileng \r\n";
+$response .= "3. Ho siea motho ea u hlekefetsang \r\n";
+$response .= "4. Tokomane ea polokelo\r\n";
 }
 else if ($text == "1*3*1") {
 $response  = "CON Sena ke sa maemo a tšohanyetso \r\n";
@@ -189,7 +189,7 @@ $response .= "Enter 0 to cancel \r\n";
 
     // Menu for a user who enters "1" from the fifth menu
 else if ($text == "1*1*3*1") {
-$response = "CON An organisation will contact you shortly with a safety plan";
+$response = "CON An organisation will contact you shortly with a safety plan\r\n";
 $response .= "Enter your contact details below to continue \r\n";
 $response .= "Enter 0 to cancel \r\n";
 }
@@ -256,7 +256,7 @@ $response .= "Faka u-0 ukuze ukhansele \r\n";
 
 else if ($text == "1*4*3*1*0") {
 $response = "CON Isicelo sakho sikhanseliwe\r\n";
-$response .= "Siyabonga ngokusebenzisa insiza yethu, n\ Esilethelwe yona yi-Imbokodo\r\n";
+$response .= "Siyabonga ngokusebenzisa insiza yethu, \r\n Esilethelwe yona yi-Imbokodo\r\n";
 }
 
 
