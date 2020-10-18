@@ -54,39 +54,41 @@ $response .= "4. Dokumentberging\n";
 }
 // Menu for a user who selects "1" from the fourth menu screen
 else if ($text == "1*2*1") {
-$response .= "Dit is slegs vir onmiddellike noodgevalle \n";
+$response  = "CON Dit is slegs vir onmiddellike noodgevalle \n";
 $response .= "Voer 1 in om voort te gaan 0 in om te kanselleer \n";
 
 }
 else if ($text == "1*2*1*1") {
-$response = "U waarskuwing is ontvang";
-$response .= "Voer u adres hieronder in";
-$response .= "Ons noodreddingspan is op pad";
+$response  = "CON U waarskuwing is ontvang \r\n";
+$response .= "Voer u adres hieronder in \r\n";
+$response .= "Ons noodreddingspan is op pad \r\n";
 }
 else if ($text == "1*2*1*0") {
-$response = "U versoek is gekanselleer";
-$response .= "Dankie vir die gebruik van ons diens, \ngebring deur Imbokodo";
+$response = "CON U versoek is gekanselleer \r\n";
+$response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo \r\n";
 }
 // Menu for a user who selects "3" from the second menu above
 // Will be brought to this fith menu screen
 else if ($text == "1*3") {
-$response  = "CON  Ka kopo khetha khetho e ka tlase\n";
+$response  = "CON  Ka kopo khetha khetho e ka tlase \r\n";
 $response .= "1. Tlhokomeliso ea maemo a tšohanyetso \n";
 $response .= "2. Ntlo e Sireletsehileng \n";
 $response .= "3. Ho siea motho ea u hlekefetsang \n";
 $response .= "4. Tokomane ea polokelo\n";
-  }
-// Menu for a user who enters "1" from the fifth menu
+}
 else if ($text == "1*3*1") {
-$response = "CON An organisation will contact you to come up with a safety plan that is best for you";
-$response .= "Enter your phone number to continue \n";
-$response .= "Enter 0 to cancel \n";
+$response  = "CON Sena ke sa maemo a tšohanyetso \r\n";
+$response .= "Kenya 1 ho tsoela pele \n";
+$response .= "Kenya 0 ho hlakola";
 }
 else if ($text == "1*3*1*1") {
-$response = "END Thank you, you will be contacted soon to discuss a safety plan";
+$response  = "CON Tlhokomeliso ea hau e amohetsoe \r\n";
+$response .= "Kenya aterese ea hau ka tlase \r\n";
+$response .= "Sehlopha sa rona sa pholoso \r\n sa maemo a tšohanyetso se tseleng \r\n";
 }
 else if ($text == "1*3*1*0") {
-$response = "END Your request has been canceled";
+$response  = "CON Kopo ea hau e hlakotsoe \r\n";
+$response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n u tliselitse eona ka Imbokodo \r\n";
 }
 // Menu for a user who enters "4" from the second menu above
 // Will be brought to this sixth menu screen
@@ -107,18 +109,7 @@ $response .= " Medical doccuments";
 $response .= " Take these doccuments to an organisation near you \n";
 }
 
-// Menu for a user who enters "1" from the fifth menu
-else if ($text == "1*3*1") {
-$response = "CON An organisation will contact you to come up with a safety plan that is best for you";
-$response .= "Enter your phone number to continue \n";
-$response .= "Enter 0 to cancel \n";
-}
-else if ($text == "1*3*1*1") {
-$response = "END Thank you, you will be contacted soon to discuss a safety plan";
-}
-else if ($text == "1*3*1*0") {
-$response = "END Your request has been canceled";
-}
+
 // Menu for a user who enters "4" from the second menu above
 // Will be brought to this sixth menu screen
 else if ($text == "1*1*4") {
