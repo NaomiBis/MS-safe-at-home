@@ -35,19 +35,25 @@ $response .= "4. Document Storage\n";
 // Will be brought to this third menu screen
 //Emidiate emergency option which will alert a emergency team
 else if ($text == "1*1*1") {
-$response  = "CON This is only for immediate emergency \r\n";
+$response  = "CON This is only for immediate emergency. \r\n";
 $response .= "Enter 1 to continue \r\n";
 $response .= "Enter 0 to cancel \r\n";
 }
-//Emergency option in english, user will insert their adress and emergency service will get notified 
+//Emergency option in english, user will confirm their location and emergency service will get notified 
 else if ($text == "1*1*1*1") {
 $response = "CON Your alert has been recieved \r\n";
-$response .= "Enter your address below \r\n";  
+$response .= "Enter 1 to confirm your device's current location as an emergency pick up location. \r\n";
+$response .= "Enter 2 to recieve a call and confirm location for an emergency pick up   \r\n";
 }
-// User cancels emergency option
-else if ($text == "1*1*1*1*$x") {
-$response .= "Our emergency rescue team is on the way \r\n";
-$response .= "Thanks for using our service, \r\n Brought to you by Imbokodo \r\n";
+// User recieves confirmation emergency pick up message from the rescue team using a device's current location
+else if ($text == "1*1*1*1*1") {
+$response .= "Remain calm, our emergency rescue team is on the way to pick you\r\n";
+$response .= "Thanks for using our service, \r\n Brought to you by Imbokodo. \r\n";
+}
+// User recieves confirmation emergency pick up message from the rescue team by recieving a call
+else if ($text == "1*1*1*1*2") {
+$response .= "Remain calm, you will receive a call shortly \r\n to confirm your emergency pick up location.\r\n";
+$response .= "Thanks for using our service, \r\n Brought to you by Imbokodo. \r\n";
 }
 // User cancels emergency option
 else if ($text == "1*1*1*0") {
