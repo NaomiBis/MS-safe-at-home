@@ -3,6 +3,7 @@
 $sessionId   = $_POST["sessionId"];  
 $serviceCode = $_POST["serviceCode"];  
 $text = $_POST["text"];
+$x = "";
 //This is the first menu screen
 if ( $text == "" ) {
 $response  = "CON Welcome to Imbokodo get assistance or learn more. \r\n";
@@ -44,7 +45,7 @@ $response = "CON Your alert has been recieved \r\n";
 $response .= "Enter your address below \r\n";  
 }
 // User cancels emergency option
-else if ($text == "1*1*1*1*text") {
+else if ($text == "1*1*1*1*$x") {
 $response .= "Our emergency rescue team is on the way \r\n";
 $response .= "Thanks for using our service, \r\n Brought to you by Imbokodo \r\n";
 }
