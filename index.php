@@ -331,25 +331,11 @@ $response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n u tliselitse eona 
 }
 //Sotho: User cancels safe house option
 else if ($text == "1*3*2*0") {
-$response = "CON Kopo ea hau e hlakotsoe \r\n";
-// User recieves confirmation emergency pick up message from the rescue team using a device's current location
-else if ($text == "1*3*1*1*1") {
-$response = "CON Tlhokomeliso ea hau e amohetsoe. \r\n";
-$response .= "\n";
-$response .= "Lula u khobile matšoafo, sehlopha sa rona sa pholoso se potlakileng \r\n se tseleng ho u khetha.\r\n";
-$response .= "\n";
-$response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n u tliselitse eona ka Imbokodo. \r\n";
+    $response = "CON Kopo ea hau e hlakotsoe \r\n";
+    $response .= "Re leboha ho sebelisa ts'ebeletso ea rona,\r\nE u tliselitse eona ka Imbokodo \r\n";
 }
-// User recieves confirmation emergency pick up message from the rescue team by recieving a call
-else if ($text == "1*3*1*1*2") {
-$response = "CON Tlhokomeliso ea hau e amohetsoe. \r\n";
-$response .= "\n";
-$response .= "Lula u khobile matšoafo, o tla fumana mohala haufinyane \r\ n ho netefatsa sebaka sa hau sa maemo a tšohanyetso.\r\n";
-$response .= "\n";
-$response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n u tliselitse eona ka Imbokodo. \r\n";
-}
-$response .= "Re leboha ho sebelisa ts'ebeletso ea rona,\r\nE u tliselitse eona ka Imbokodo \r\n";
-}
+
+
 // Menu for a user who selects '4' from the second menu
 // Will be brought to this third menu screen
 //Zulu option: User will have acess to safe house
