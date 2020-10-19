@@ -47,11 +47,13 @@ $response .= "Enter 2 to recieve a call and confirm location for an emergency pi
 }
 // User recieves confirmation emergency pick up message from the rescue team using a device's current location
 else if ($text == "1*1*1*1*1") {
+$response = "CON Your alert has been recieved \r\n";
 $response .= "Remain calm, our emergency rescue team is on the way to pick you\r\n";
 $response .= "Thanks for using our service, \r\n Brought to you by Imbokodo. \r\n";
 }
 // User recieves confirmation emergency pick up message from the rescue team by recieving a call
 else if ($text == "1*1*1*1*2") {
+$response = "CON Your alert has been recieved \r\n";
 $response .= "Remain calm, you will receive a call shortly \r\n to confirm your emergency pick up location.\r\n";
 $response .= "Thanks for using our service, \r\n Brought to you by Imbokodo. \r\n";
 }
