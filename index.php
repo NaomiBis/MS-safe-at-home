@@ -38,8 +38,8 @@ $response .= "4. Document Storage\n";
 else if ($text == "1*1*1") {
 $response  = "CON This is only for immediate emergency. \r\n";
 $response .= "\n";
-$response .= "Enter 1 to continue \r\n";
-$response .= "Enter 0 to cancel \r\n";
+$response .= "Enter 1 to continue. \r\n";
+$response .= "Enter 0 to cancel. \r\n";
 }
 //Emergency option in english, user will confirm their location and emergency service will get notified 
 else if ($text == "1*1*1*1") {
@@ -139,6 +139,7 @@ else if ($text == "1*3*1*1") {
 $response  = "CON Tlhokomeliso ea hau e amohetsoe. \r\n";
 $response .= "\n";
 $response .= "Kenya 1 ho netefatsa sebaka seo fono e leng ho sona hajoale \r\n e le boemo ba tšohanyetso. \r\n";
+$response .= "\n";
 $response .= "Kenya 2 ho amohela mohala le ho netefatsa sebaka sa hau \r\n bakeng sa ho nka boemo ba tšohanyetso. \r\n";
 }
 // User recieves confirmation emergency pick up message from the rescue team using a device's current location
@@ -146,6 +147,7 @@ else if ($text == "1*3*1*1*1") {
 $response = "CON Tlhokomeliso ea hau e amohetsoe. \r\n";
 $response .= "\n";
 $response .= "Lula u khobile matšoafo, sehlopha sa rona sa pholoso se potlakileng \r\n se tseleng ho u khetha.\r\n";
+$response .= "\n";
 $response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n u tliselitse eona ka Imbokodo. \r\n";
 }
 // User recieves confirmation emergency pick up message from the rescue team by recieving a call
@@ -153,6 +155,7 @@ else if ($text == "1*3*1*1*2") {
 $response = "CON Tlhokomeliso ea hau e amohetsoe. \r\n";
 $response .= "\n";
 $response .= "Lula u khobile matšoafo, o tla fumana mohala haufinyane \r\ n ho netefatsa sebaka sa hau sa maemo a tšohanyetso.\r\n";
+$response .= "\n";
 $response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n u tliselitse eona ka Imbokodo. \r\n";
 }
 // User cancels emergency option
@@ -193,13 +196,15 @@ else if ($text == "1*4*1*1*1") {
 $response = "CON Isaziso sakho sitholiwe. \r\n";
 $response .= "\n";
 $response .= "Hlala uzolile, ithimba lethu labezimo eziphuthumayo \r\n lisendleleni elizokuthatha.\r\n";
+$response .= "\n";
 $response .= "Siyabonga ngokusebenzisa insiza yethu \r\n Esilethelwe yona yi-Imbokodo. \r\n";
 }
 // User recieves confirmation emergency pick up message from the rescue team by recieving a call
 else if ($text == "1*4*1*1*2") {
 $response = "CON Isaziso sakho sitholiwe. \r\n";
 $response .= "\n";
-$response .= "Hlala uzolile, uzothola ucingo maduzane \r\n ukuze uqinisekise indawo okulandwa kuyo okuphuthumayo.\r\n";
+$response .= "Hlala uzolile, uzothola ucingo maduzane \r\n ukuze uqinisekise indawo ozolandwa kuyo ephuthumayo.\r\n";
+$response .= "\n";
 $response .= "Siyabonga ngokusebenzisa insiza yethu \r\n Esilethelwe yona yi-Imbokodo. \r\n";
 }
 // User cancels emergency option
@@ -214,7 +219,8 @@ $response .= "Siyabonga ngokusebenzisa insiza yethu \r\n Esilethelwe yona yi-Imb
 else if ($text == "1*1*2") {
 $response = "CON Safe houses are organisations that can help you \r\n with a accomodation and other services \r\n";
 $response .= "\n";
-$response .= "Please Enter 1 to confirm your need for a safe house \r\n";
+$response .= "Please Enter 1 to confirm your need for a safe house. \r\n";
+$response .= "\n";
 $response .= "Please Enter 0 to cancel \r\n";
 }
 // Third menu screen 
@@ -223,6 +229,7 @@ else if ($text == "1*1*2*1") {
 $response = "CON Your safe house request has been recieved \r\n";
 $response .= "\n";
 $response .= "Enter 1 to confirm your device's current location as an emergency pick up location. \r\n";
+$response .= "\n";
 $response .= "Enter 2 to recieve a call and confirm your location for an emergency pick up.   \r\n";
 }
 // User recieves confirmation emergency pick up message from the rescue team using a device's current location
@@ -230,6 +237,7 @@ else if ($text == "1*1*2*1*1") {
 $response = "CON Your alert has been recieved \r\n";
 $response .= "\n";
 $response .= "Remain calm, our emergency rescue team is on the way to pick you.\r\n";
+$response .= "\n";
 $response .= "Thanks for using our service, \r\n Brought to you by Imbokodo. \r\n";
 }
 // User recieves confirmation emergency pick up message from the rescue team by recieving a call
@@ -237,11 +245,13 @@ else if ($text == "1*1*2*1*2") {
 $response = "CON Your alert has been recieved \r\n";
 $response .= "\n";
 $response .= "Remain calm, you will receive a call shortly \r\n to confirm your emergency pick up location.\r\n";
+$response .= "\n";
 $response .= "Thanks for using our service, \r\n Brought to you by Imbokodo. \r\n";
 }
 //English: User cancels safe house option
 else if ($text == "1*1*2*0") {
 $response = "CON Your request has been canceled \r\n";
+$response .= "\n";
 $response .= "Thanks for using our service, \r\n Brought to you by Imbokodo \r\n";
 }
 // Menu for a user who selects '2' from the second menu
@@ -249,19 +259,39 @@ $response .= "Thanks for using our service, \r\n Brought to you by Imbokodo \r\n
 //Afrikaans option: User will have acess to safe houses
 else if ($text == "1*2*2") {
 $response = "CON Veilige huise is organisasies wat u kan help \r\n met akkommodasie en ander dienste \r\n";
+$response .= "\n";
 $response .= "Voer 1 in om u behoefte aan 'n veilige huis te bevestig \r\n";
+$response .= "\n";
 $response .= "Voer asseblief 0 in om te kanselleer \r\n";
 }
 //Third menu screen
 //User will chose a safe house option and transport will be requested from emergency team
 else if ($text == "1*2*2*1") {
 $response = "CON U veilige huisversoek is ontvang \r\n";
-$response .= "Voer u adres hieronder in as u vervoer benodig \r\n";
-$response .= "Ons noodreddingspan is op pad \r\n";
+$response .= "\n";
+$response .= "Voer 1 in om u foon se huidige ligging as 'n noodoplaai-plek te bevestig.. \r\n";
+$response .= "\n";
+$response .= "Voer 2 in om 'n oproep te ontvang en bevestig die plek vir 'n noodopname.   \r\n";
+}
+// User recieves confirmation emergency pick up message from the rescue team using a device's current location
+else if ($text == "1*2*2*1*1") {
+$response = "CON U waarskuwing is ontvang. \r\n";
+$response .= "\n";
+$response .= "Bly kalm, ons noodreddingspan is op pad om u te kies.\r\n";
+$response .= "\n";
+$response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo. \r\n";
+}
+else if ($text == "1*2*2*1*2") {
+$response = "CON U waarskuwing is ontvang. \r\n";
+$response .= "\n";
+$response .= "Bly kalm, u sal binnekort 'n oproep ontvang \r\n om u noodhaalplek te bevestig.\r\n";
+$response .= "\n";
+$response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo. \r\n";
 }
 //afrikaans: User cancels safe house option
 else if ($text == "1*2*2*0") {
 $response = "CON U versoek is gekanselleer \r\n";
+$response .= "\n";
 $response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo \r\n";
 }
 // Menu for a user who selects '3' from the second menu
@@ -269,19 +299,55 @@ $response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo \
 //Sotho option: User will have acess to safe houses
 else if ($text == "1*3*2") {
 $response = "CON Matlo a bolokehileng ke mekhatlo e ka u thusang \n ka bolulo le lits'ebeletso tse ling\r\n";
+$response .= "\n";
 $response .= "Ka kopo kenya 1 ho netefatsa tlhoko ea hau ea ntlo e bolokehileng\r\n";
+$response .= "\n";
 $response .= "Ka kopo kenya 0 ho hlakola \r\n";
 }
 //Third menu screen 
 //User will chose a safe house option and transport will be requested from emergency team
 else if ($text == "1*3*2*1") {
 $response = "CON Kopo ea hau ea ntlo e bolokehileng e amohetsoe \r\n";
-$response .= "Kenya aterese ea hau ka tlase, haeba o hloka sepalangoang \r\n";
-$response .= "Sehlopha sa rona sa pholoso sa maemo a tšohanyetso se tseleng \r\n";
+$response .= "\n";
+$response .= "Kenya 1 ho netefatsa sebaka seo fono e leng ho sona hajoale \r\n e le boemo ba tšohanyetso. \r\n";
+$response .= "\n";
+$response .= "Kenya 2 ho amohela mohala le ho netefatsa sebaka sa hau \r\n bakeng sa ho nka boemo ba tšohanyetso. \r\n";
+}
+// User recieves confirmation emergency pick up message from the rescue team using a device's current location
+else if ($text == "1*3*2*1*1") {
+$response = "CON Tlhokomeliso ea hau e amohetsoe. \r\n";
+$response .= "\n";
+$response .= "Lula u khobile matšoafo, sehlopha sa rona sa pholoso se potlakileng \r\n se tseleng ho u khetha.\r\n";
+$response .= "\n";
+$response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n u tliselitse eona ka Imbokodo. \r\n";
+}
+// User recieves confirmation emergency pick up message from the rescue team by recieving a call
+else if ($text == "1*3*2*1*2") {
+$response = "CON Tlhokomeliso ea hau e amohetsoe. \r\n";
+$response .= "\n";
+$response .= "Lula u khobile matšoafo, o tla fumana mohala haufinyane \r\ n ho netefatsa sebaka sa hau sa maemo a tšohanyetso.\r\n";
+$response .= "\n";
+$response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n u tliselitse eona ka Imbokodo. \r\n";
 }
 //Sotho: User cancels safe house option
 else if ($text == "1*3*2*0") {
 $response = "CON Kopo ea hau e hlakotsoe \r\n";
+// User recieves confirmation emergency pick up message from the rescue team using a device's current location
+else if ($text == "1*3*1*1*1") {
+$response = "CON Tlhokomeliso ea hau e amohetsoe. \r\n";
+$response .= "\n";
+$response .= "Lula u khobile matšoafo, sehlopha sa rona sa pholoso se potlakileng \r\n se tseleng ho u khetha.\r\n";
+$response .= "\n";
+$response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n u tliselitse eona ka Imbokodo. \r\n";
+}
+// User recieves confirmation emergency pick up message from the rescue team by recieving a call
+else if ($text == "1*3*1*1*2") {
+$response = "CON Tlhokomeliso ea hau e amohetsoe. \r\n";
+$response .= "\n";
+$response .= "Lula u khobile matšoafo, o tla fumana mohala haufinyane \r\ n ho netefatsa sebaka sa hau sa maemo a tšohanyetso.\r\n";
+$response .= "\n";
+$response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n u tliselitse eona ka Imbokodo. \r\n";
+}
 $response .= "Re leboha ho sebelisa ts'ebeletso ea rona,\r\nE u tliselitse eona ka Imbokodo \r\n";
 }
 // Menu for a user who selects '4' from the second menu
@@ -289,19 +355,40 @@ $response .= "Re leboha ho sebelisa ts'ebeletso ea rona,\r\nE u tliselitse eona 
 //Zulu option: User will have acess to safe house
 else if ($text == "1*4*2") {
 $response  = "CON Izindlu eziphephile izinhlangano ezingakusiza \r\n ngendawo yokuhlala kanye nezinye izinsiza \r\n";
+$response .= "\n";
 $response .= "Sicela ufake u-1 ukuqinisekisa isidingo sakho sendlu ephephile\r\n";
+$response .= "\n";
 $response .= "Sicela ufake u-0 ukuze ukhansele\r\n";
 }
 //Third menu screen 
 //User will chose a safe house option and transport will be requested from emergency team
 else if ($text == "1*4*2*1") {
 $response  = "CON Isicelo sakho sendlu ephephile sitholiwe\r\n";
-$response .= "Faka ikheli lakho ngezansi, uma udinga ezokuthutha\r\n";
-$response .= "Ithimba lethu labezimo eziphuthumayo lisendleleni\r\n";
+$response .= "\n";
+$response .= "Faka u-1 ukuze uqinisekise indawo okuyo manje yefoni yakho \r\n njengendawo yokulanda okuphuthumayo. \r\n";
+$response .= "\n";
+$response .= "Faka okungu-2 ukuthola ucingo bese uqinisekisa indawo okuyo \r\n yesimo esiphuthumayo. \r\n";
+}
+// User recieves confirmation emergency pick up message from the rescue team using a device's current location
+else if ($text == "1*4*2*1*1") {
+$response = "CON Isaziso sakho sitholiwe. \r\n";
+$response .= "\n";
+$response .= "Hlala uzolile, ithimba lethu labezimo eziphuthumayo \r\n lisendleleni elizokuthatha.\r\n";
+$response .= "\n";
+$response .= "Siyabonga ngokusebenzisa insiza yethu \r\n Esilethelwe yona yi-Imbokodo. \r\n";
+}
+// User recieves confirmation emergency pick up message from the rescue team by recieving a call
+else if ($text == "1*4*2*1*2") {
+$response = "CON Isaziso sakho sitholiwe. \r\n";
+$response .= "\n";
+$response .= "Hlala uzolile, uzothola ucingo maduzane \r\n ukuze uqinisekise indawo ozolandwa kuyo ephuthumayo.\r\n";
+$response .= "\n";
+$response .= "Siyabonga ngokusebenzisa insiza yethu \r\n Esilethelwe yona yi-Imbokodo. \r\n";
 }
 // Zulu: User cancels safe house option
 else if ($text == "1*4*2*0") {
 $response  = "CON Isicelo sakho sikhanseliwe\r\n";
+$response .= "\n";
 $response .= "Siyabonga ngokusebenzisa insiza yethu, n\ Esilethelwe yona yi-Imbokodo\r\n";
 }
 // Menu for a user who selects '1' from the second menu
@@ -309,6 +396,7 @@ $response .= "Siyabonga ngokusebenzisa insiza yethu, n\ Esilethelwe yona yi-Imbo
 // English option for advice
 else if ($text == "1*1*3") {
 $response = "CON Do you need advice on how to leave your abuser? \r\n";
+$response .= "\n";
 $response .= "Enter 1 to continue \r\n";
 $response .= "Enter 0 to cancel \r\n";
 }
@@ -316,13 +404,31 @@ $response .= "Enter 0 to cancel \r\n";
 // Menu for a user who enters "1" from the fifth menu
 // User will enter details that will be needed to be sent to the necessary organisations
 else if ($text == "1*1*3*1") {
-$response = "CON An organisation will contact you shortly with a safety plan\r\n";
-$response .= "Enter your contact details below to continue \r\n";
+$response = "CON Please choose one option below to proceed:\r\n";
+$response .= "\n";
+$response .= "Enter 1 to recieve a call on the number you're currently using on Imbokodo  \r\n";
+$response .= "\n";
+$response .= "Enter 2 to send to recieve a call on an alternative number, \r\n provided it is recorded in our database";
+$response .= "\n";
 $response .= "Enter 0 to cancel \r\n";
 }
+//if user chooses option 1
+else if ($text == "1*1*3*1*1") {
+$response = "CON An organisation will contact you shortly with a safety plan\r\n";
+$response .= "\n";
+$response .= "Thanks for using our service, \r\n Brought to you by Imbokodo\r\n";
+}
+//if user chooses option 2
+else if ($text == "1*1*3*1*2") {
+$response = "CON An organisation will contact you shortly with a safety plan\r\n";
+$response .= "\n";
+$response .= "Thanks for using our service, \r\n Brought to you by Imbokodo\r\n";
+}
+
 //if user cancels
 else if ($text == "1*1*3*1*0") {
 $response = "CON Your request has been canceled\r\n";
+$response .= "\n";
 $response .= "Thanks for using our service, \r\n Brought to you by Imbokodo\r\n";
 }
 
@@ -338,13 +444,30 @@ $response .= "Voer 0 in om te kanselleer\r\n";
     // Menu for a user who enters "1" from the fifth menu
 // User will enter details that will be needed to be sent to the necessary organisations
 else if ($text == "1*2*3*1") {
-$response = "CON 'N Organisasie sal binnekort met \r\n u in verbinding tree met 'n veiligheidsplan\r\n";
-$response .= "Voer u kontakbesonderhede hieronder in om voort te gaan \r\n";
+$response = "CON Kies een opsie hieronder om voort te gaan.:\r\n";
+$response .= "\n";
+$response .= "Voer 1 in om 'n oproep te ontvang vir die nommer wat u tans op Imbokodo gebruik.  \r\n";
+$response .= "\n";
+$response .= "Voer 2 in om te stuur om 'n alternatiewe nommer te ontvang, \r\n mits dit in ons databasis opgeteken is.";
+$response .= "\n";
 $response .= "Voer 0 in om te kanselleer \r\n";
+}
+//if user chooses option 1
+else if ($text == "1*2*3*1*1") {
+$response = "CON N Organisasie sal binnekort met \r\n u in verbinding tree met 'n veiligheidsplan\r\n";
+$response .= "\n";
+$response .= "Thanks for using our service, \r\n Brought to you by Imbokodo\r\n";
+}
+//if user chooses option 2
+else if ($text == "1*2*3*1*2") {
+$response = "CON N Organisasie sal binnekort met \r\n u in verbinding tree met 'n veiligheidsplan\r\n";
+$response .= "\n";
+$response .= "Thanks for using our service, \r\n Brought to you by Imbokodo\r\n";
 }
 //if user cancels
 else if ($text == "1*2*3*1*0") {
 $response = "CON U versoek is gekanselleer\r\n";
+$response .= "\n";
 $response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo\r\n";
 }
 
@@ -353,20 +476,39 @@ $response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo\r
    // Sotho option for
 else if ($text == "1*3*3") {
 $response = "CON Na o hloka likeletso mabapi le hore \r\n na o ka tlohela joang motho ea u hlekefetsang? \r\n";
+$response .= "\n";
 $response .= "Kenya 1 ho tsoela pele \r\n";
+$response .= "\n";
 $response .= "Kenya 0 ho hlakola\r\n";
 }
 
 // Menu for a user who enters "1" from the fifth menu
 // User will enter details that will be needed to be sent to the necessary organisations
 else if ($text == "1*3*3*1") {
+$response = "CON Ka kopo khetha khetho e le 'ngoe ka tlase ho tsoela pele:\r\n";
+$response .= "\n";
+$response .= "Kenya 1 ho amohela mohala ka nomoro eo o e sebelisang hajoale ho Imbokodo.  \r\n";
+$response .= "\n";
+$response .= "Kenya 2 ho romella ho amohela mohala ho nomoro e ngoe, \r\n ha feela e tlalehiloe polokelongtshedimosetsong ea rona. \r\n";
+$response .= "\n";
+$response .= "Kenya 0 ho hlakola\r\n";
+}
+//if user chooses option 1
+else if ($text == "1*3*3*1*1") {
 $response = "CON Mokhatlo o tla ikopanya le uena \r\n haufinyane ka moralo oa polokeho\r\n";
-$response .= "Kenya lintlha tsa hau tsa puisano \r\n ka tlase ho tsoela pele \r\n";
-$response .= "Kenya 0 ho hlakola \r\n";
+$response .= "\n";
+$response .= "Thanks for using our service, \r\n Brought to you by Imbokodo\r\n";
+}
+//if user chooses option 2
+else if ($text == "1*3*3*1*2") {
+$response = "CON Mokhatlo o tla ikopanya le uena \r\n haufinyane ka moralo oa polokeho\r\n";
+$response .= "\n";
+$response .= "Thanks for using our service, \r\n Brought to you by Imbokodo\r\n";
 }
 //if user cancels
 else if ($text == "1*3*3*1*0") {
 $response = "CON Kopo ea hau e hlakotsoe";
+$response .= "\n";
 $response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n E u tliselitse eona ka Imbokodo\r\n";
 }
 
@@ -382,13 +524,30 @@ $response .= "Faka u-0 ukuze ukhansele\r\n";
    // Menu for a user who enters "1" from the fifth menu
 // User will enter details that will be needed to be sent to the necessary organisations
  else if ($text == "1*4*3*1") {
+$response = "CON Sicela ukhethe inketho eyodwa ngezansi ukuze uqhubeke:\r\n";
+$response .= "\n";
+$response .= "Faka u-1 ukuthola ucingo enombolweni oyisebenzisa njengamanje ku-Imbokodo.  \r\n";
+$response .= "\n";
+$response .= "Faka u-2 ukuze uthumele ukwamukela ikholi kwenye inombolo, \r\n inqobo nje uma irekhodwe kusizindalwazi sethu.";
+$response .= "\n";
+$response .= "Faka u-0 ukuze ukhansele\r\n";
+}
+//if user chooses option 1
+else if ($text == "1*4*3*1*1") {
+$response = "Inhlangano izokuthinta maduzane ngohlelo lokuphepha\r\n";
+$response .= "\n";
+$response .= "Siyabonga ngokusebenzisa insiza yethu, \r\n Esilethelwe yona yi-Imbokodo\r\n";
+}
+//if user chooses option 2
+else if ($text == "1*4*3*1*2") {
 $response = "CON Inhlangano izokuthinta maduzane ngohlelo lokuphepha\r\n";
-$response .= "Faka imininingwane yakho yokuxhumana ngezansi ukuze uqhubeke \r\n";
-$response .= "Faka u-0 ukuze ukhansele \r\n";
+$response .= "\n";
+$response .= "Siyabonga ngokusebenzisa insiza yethu, \r\n Esilethelwe yona yi-Imbokodo\r\n";
 }
 //if user cancels
 else if ($text == "1*4*3*1*0") {
 $response = "CON Isicelo sakho sikhanseliwe\r\n";
+$response .= "\n";
 $response .= "Siyabonga ngokusebenzisa insiza yethu, \r\n Esilethelwe yona yi-Imbokodo\r\n";
 }
 // Menu for a user who selects '4' from the second menu
@@ -396,6 +555,7 @@ $response .= "Siyabonga ngokusebenzisa insiza yethu, \r\n Esilethelwe yona yi-Im
 // English option for keeping important documents
 else if ($text == "1*1*4") {
 $response = "CON This is for keeping your important documents safe at an organisation\r\n";
+$response .= "\n";
 $response .= "Please Enter 1 to continue \r\n";
 $response .= "Please Enter 0 to cancel \r\n";
 }
@@ -405,31 +565,41 @@ $response .= "Please Enter 0 to cancel \r\n";
   // English option: user will be able to know which document they would need to take to the nearest safe house or police station
  else if ($text == "1*1*4*1") {
 $response  = "CON Please take the following original documents\r\n";
+$response .= "\n";
 $response .= "ID/Birth certificate & Educational certificate\r\n";
 $response .= "Legal documents & Medical documents\r\n";
 $response .= "To the nearest organisation or police station\r\n";
-$response .= "Thanks for using our service, \nBrought to you by Imbokodo \r\n";
-$response .= "To return to the main men, Enter 9 below \r\n";
+$response .= "\n";
+$response .= "To return to the main menu, Enter 9 below \r\n";
+$response .= "To exit Enter 5 below \r\n";
 }
 //user cancels request
 else if ($text == "1*1*4*0") {
 $response = "CON Your request has been canceled\r\n";
+$response .= "\n";
 $response .= "Thanks for using our service, \r\nBrought to you by Imbokodo. \r\n";
 }
-//user selects language option from the first menu section
+//user selects 9 as an option from the menu section
 else if ($text == "1*1*4*1*9") {
 $response  = "CON  Please select a language \n";
+$response .= "\n";
 $response .= "1. English \n";
 $response .= "2. Afrikaans \n";
 $response .= "3. Sotho \n";
 $response .= "4. Zulu \n";
 }
+//user selects exit option from the first menu section
+else if ($text == "1*1*4*1*5") {
+$response = "CON Thanks for using our service, \r\nBrought to you by Imbokodo.\r\n";
+}
+
 
     // Menu for a user who enters "4" from the second menu above
    // Will be brought to this sixth menu screen
    // Afrikaans option: user will be able to know which document they would need to take to the nearest safe house or police station
 else if ($text == "1*2*4") {
 $response = "CON Dit is om u belangrike dokumente by 'n organisasie veilig te hou. \r\n";
+$response .= "\n";
 $response .= "Voer 1 in om voort te gaan \r\n";
 $response .= "Voer asseblief 0 in om te kanselleer \r\n";
 }
@@ -439,31 +609,41 @@ $response .= "Voer asseblief 0 in om te kanselleer \r\n";
     // Afrikaans option: user will be able to know which document they would need to take to the nearest safe house or police station
 else if ($text == "1*2*4*1") {
 $response =  "CON Neem asseblief die volgende oorspronklike dokumente\r\n";
+$response .= "\n";
 $response .= "ID/Geboortesertifikaat & Opvoedkundige sertifikaat\r\n";
 $response .= "Regsdokumente en mediese dokumente\r\n";
 $response .= "Na die naaste organisasie of polisiekantoor\r\n";
-$response .= "Dankie vir die gebruik van ons diens, \n gebring deur Imbokodo\r\n";
+$response .= "\n";
 $response .= "Voer 9 hieronder in om terug te keer na die hoofmanne \r\n";
+$response .= "Om Enter 5 hieronder te verlaat. \r\n";
 }
 //user cancels
 else if ($text == "1*2*4*0") {
 $response = "CON U versoek is gekanselleer\r\n";
+$response .= "\n";
 $response .= "Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo\r\n";
 }
-//user selects language option from the first menu section
+//user selects 9 as an option from the menu section
 else if ($text == "1*2*4*1*9") {
 $response  = "CON  Please select a language \n";
+$response .= "\n";
 $response .= "1. English \n";
 $response .= "2. Afrikaans \n";
 $response .= "3. Sotho \n";
 $response .= "4. Zulu \n";
 }
+//user selects exit option from the first menu section
+else if ($text == "1*2*4*1*5") {
+$response = "CON Dankie vir die gebruik van ons diens, \r\n gebring deur Imbokodo.\r\n";
+}
+
 
     // Menu for a user who enters "4" from the second menu above
    // Will be brought to this sixth menu screen
    // Sotho option for keeping important documents
 else if ($text == "1*3*4") {
 $response = "CON Sena ke bakeng sa ho boloka litokomane \r\ntsa hau tsa bohlokoa li bolokehile \r\n mokhatlong o hlophisitsoeng\r\n";
+$response .= "\n";
 $response .= "Ka kopo kenya 1 ho tsoela pele \r\n";
 $response .= "Ka kopo kenya 0 ho hlakola \r\n";
 }
@@ -473,20 +653,28 @@ $response .= "Ka kopo kenya 0 ho hlakola \r\n";
   // Sotho option: user will be able to know which document they would need to take to the nearest safe house or police station
 else if ($text == "1*3*4*1") {
 $response =  "CON Ka kopo nka litokomane tsa mantlha tse latelang\r\n";
+$response .= "\n";
 $response .= "Setifikeiti sa ID/Tsoalo le setifikeiti sa thuto\r\n";
 $response .= "Litokomane tsa molao le litokomane tsa bongaka\r\n";
 $response .= "Ho ea mokhatlong o haufi kapa seteisheneng sa mapolesa\r\n";
-$response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \nE u tliselitse eona ka Imbokodo\r\n";
+$response .= "\n";
 $response .= "Ho khutlela ho menu ya ka sehloohong, Kenya 9 ka tlase\r\n";
+$response .= "Ho tsoa Kenya 5 ka tlase \r\n";
 }
 //user cancel
 else if ($text == "1*3*4*0") {
 $response = "CON Kopo ea hau e hlakotsoe\r\n";
+$response .= "\n";
 $response .= "Re leboha ho sebelisa ts'ebeletso ea rona, \r\n E u tliselitse eona ka Imbokodo\r\n";
 }
-//user selects language option from the first menu section
+//user selects exit option from the first menu section
+else if ($text == "1*3*4*1*5") {
+$response = "CON Re leboha ho sebelisa ts'ebeletso ea rona, \r\n E u tliselitse eona ka Imbokodo.\r\n";
+}
+//user selects 9 option from the menu section
 else if ($text == "1*3*4*1*9") {
 $response  = "CON  Please select a language \n";
+$response .= "\n";
 $response .= "1. English \n";
 $response .= "2. Afrikaans \n";
 $response .= "3. Sotho \n";
@@ -498,6 +686,7 @@ $response .= "4. Zulu \n";
  // Zulu option for keeping important documents
 else if ($text == "1*4*4") {
 $response = "CON Lokhu kwenzelwa ukugcina imibhalo yakho \r\n ebalulekile iphephile enhlanganweni\r\n";
+$response .= "\n";
 $response .= "Faka u-1 ukuze uqhubeke \r\n";
 $response .= "Faka u-0 ukuze ukhansele\r\n";
 }
@@ -507,24 +696,32 @@ $response .= "Faka u-0 ukuze ukhansele\r\n";
   // Zulu option: user will be able to know which document they would need to take to the nearest safe house or police station
 else if ($text == "1*4*4*1") {
 $response =  "CON Sicela uthathe imibhalo yokuqala elandelayo\r\n";
+$response .= "\n";
 $response .= "Isitifiketi se-ID/sokuzalwa nesitifiketi semfundo\r\n";
 $response .= "Imibhalo yezomthetho nemibhalo yezokwelapha\r\n";
 $response .= "Enhlanganweni esiseduzane noma esiteshini samaphoyisa\r\n";
-$response .= "Siyabonga ngokusebenzisa insiza yethu,\r\n Ulethelwe yona yi-Imbokodo \n";
+$response .= "\n";
 $response .= "Ukubuyela kumenu ephambili, Faka u-9 ngezansi\r\n";
+$response .= "To exit Enter 5 below \r\n";
 }
 //user cancels request
 else if ($text == "1*4*4*0") {
 $response = "CON Isicelo sakho sikhanseliwe\r\n";
+$response .= "\n";
 $response .= "Siyabonga ngokusebenzisa insiza yethu, n\ Esilethelwe yona yi-Imbokodo\r\n";
 }
-//user selects language option from the first menu section
-else if ($text == "1*1*4*4*9") {
+//user selects 9 as an option from the menu section
+else if ($text == "1*4*4*1*9") {
 $response  = "CON  Please select a language \n";
+$response .= "\n";
 $response .= "1. English \n";
 $response .= "2. Afrikaans \n";
 $response .= "3. Sotho \n";
 $response .= "4. Zulu \n";
+}
+//user selects exit option from the first menu section
+else if ($text == "1*4*4*1*5") {
+$response = "CON Thanks for using our service, \r\nBrought to you by Imbokodo.\r\n";
 }
 
 //echo response
