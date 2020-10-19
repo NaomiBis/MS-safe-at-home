@@ -3,7 +3,7 @@
 $sessionId   = $_POST["sessionId"];  
 $serviceCode = $_POST["serviceCode"];  
 $text = $_POST["text"];
-$x = "";
+$x = $_POST[""];
 //This is the first menu screen
 if ( $text == "" ) {
 $response  = "CON Welcome to Imbokodo get assistance or learn more. \r\n";
