@@ -44,7 +44,7 @@ $response = "CON Your alert has been recieved \r\n";
 $response .= "1. Enter your address below \r\n";  
 }
 // User cancels emergency option
-else if ($text == "1*1*1*1*1") {
+else if ($text == "1*1*1*1*text") {
 $response .= "Our emergency rescue team is on the way \r\n";
 $response .= "Thanks for using our service, \r\n Brought to you by Imbokodo \r\n";
 }
