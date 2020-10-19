@@ -35,13 +35,18 @@ $response .= "4. Document Storage\n";
 //Emidiate emergency option which will alert a emergency team
 else if ($text == "1*1*1") {
 $response  = "CON This is only for immediate emergency \r\n";
-$response .= "Enter 1 to continue or 0 to cancel \r\n";
+$response .= "Enter 1 to continue \r\n";
+$response .= "Enter 0 to cancel \r\n";
 }
 //Emergency option in english, user will insert their adress and emergency service will get notified 
 else if ($text == "1*1*1*1") {
 $response = "CON Your alert has been recieved \r\n";
 $response .= "Enter your address below \r\n";
+}
+// User cancels emergency option
+else if ($text == "1*1*1*1*$text") {
 $response .= "Our emergency rescue team is on the way \r\n";
+$response .= "Thanks for using our service, \r\n Brought to you by Imbokodo \r\n";
 }
 // User cancels emergency option
 else if ($text == "1*1*1*0") {
