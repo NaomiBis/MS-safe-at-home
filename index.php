@@ -41,10 +41,10 @@ $response .= "Enter 0 to cancel \r\n";
 //Emergency option in english, user will insert their adress and emergency service will get notified 
 else if ($text == "1*1*1*1") {
 $response = "CON Your alert has been recieved \r\n";
-$response .= "Enter your address below \r\n";
+$response .= "1. Enter your address below \r\n";  
 }
 // User cancels emergency option
-else if ($text == "1*1*1*1*$text") {
+else if ($text == "1*1*1*1*1") {
 $response .= "Our emergency rescue team is on the way \r\n";
 $response .= "Thanks for using our service, \r\n Brought to you by Imbokodo \r\n";
 }
